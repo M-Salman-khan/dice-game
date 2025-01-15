@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Game</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* background-color: cyan; */
+            background-color: black;
+            font-family: monospace;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            margin:50px auto;
+            width: 40vw;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(16, 15, 15);
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+            /* height: 100vh; */
+            /* min-width: 673px; */
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            /* width: 450px; */
+            flex-wrap: wrap;
+        }
+        button{
+            background-color: white;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-weight: 650;
+            letter-spacing: 2px;
+            margin: 23px;
+            font-family: monospace;
+            box-shadow: 0 0 10px white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(13, 4, 4, 0.804);
+            color: white;
+            transition-duration: 0.3s;
+        }
+        .bot-dice,.user-dice{
+            background-image: url(dice1.png);
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .win{
+            visibility: hidden;
+            /* font-size: 60px; */
+            /* color: rgb(255, 247, 0); */
+            color: white;
+            text-align: center;
+            flex-wrap: wrap;
+            text-decoration: none;
+        }
+        h1{
+            /* font-size: 80px; */
+            margin-top: 23px;
+            text-decoration: overline;
+            color: burlywood;
+            text-align: center;
+        }
+        h2{
+            /* font-size: 50px; */
+            color:white;
+            text-align: center;
+        }
+        .you, .bot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 23px;
+            color: white;
+            /* text-decoration: overline; */
+        }
+        .para-head{
+            font-size: 28px;
+        }
+        .user-points, .bot-points{
+            margin: 23px;
+            font-size: 28px;
+        }
+        @media (max-width:770px) {
+
+            .main{
+                min-width: 330px;
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Welcome in areane</h1>
+        <h2>You vs Bot</h2>
+        <h1 class="win">Welcome in arena</h1>
+        <div class="content">
+            <div class="you">
+                <p class="para-head">You</p>
+                <p class="user-points"></p>
+                <div class="user-dice"></div>
+            </div>
+            <div class="bot">
+                <p class="para-head">Bot</p>
+                <p class="bot-points"></p>
+                <div class="bot-dice"></div>
+            </div>
+        </div>
+        <button id="press">Start</button>
+    </div>
+    <script>
+        let btn=document.querySelector("#press")
+        btn.addEventListener("click",()=>{
+
+            let userPoints=document.querySelector(".user-points")
+            let userdice=document.querySelector(".user-dice")
+            let botPoints=document.querySelector(".bot-points")
+            let botdice=document.querySelector(".bot-dice")
+            let winner=document.querySelector(".win")
+    
+            function randomNum() {
+                return Math.floor(Math.random()*6)+1;
+            }
+            
+            let userNewPoints=randomNum();
+            userPoints.innerHTML=`${userNewPoints}`
+            let botNewPoints=randomNum()
+            botPoints.innerHTML=`${botNewPoints}`
+    
+            userdice.style.backgroundImage=`url(dice${userNewPoints}.png)`
+            botdice.style.backgroundImage=`url(dice${botNewPoints}.png)`
+            winner.style.visibility="visible"
+            if (userNewPoints>botNewPoints) {
+                winner.innerHTML=`Congratulation! You Win 👑🎊`
+            }
+            else if (botNewPoints>userNewPoints) {
+                winner.innerHTML=`Bot Win ! Better luck next time👎`
+            }
+            else{
+                winner.innerHTML=`Tie`
+                
+            }
+        })
+    </script>
+</body>
+</html>
