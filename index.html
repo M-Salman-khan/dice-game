@@ -52,7 +52,7 @@
             transition-duration: 0.3s;
         }
         .bot-dice,.user-dice{
-            background-image: url(dice1.png);
+            background-image: url(./images/dice1.png);
             width: 100px;
             height: 100px;
             background-size: contain;
@@ -142,8 +142,8 @@
             let botNewPoints=randomNum()
             botPoints.innerHTML=`${botNewPoints}`
     
-            userdice.style.backgroundImage=`url(dice${userNewPoints}.png)`
-            botdice.style.backgroundImage=`url(dice${botNewPoints}.png)`
+            userdice.style.backgroundImage=`url(./images/dice${userNewPoints}.png)`
+            botdice.style.backgroundImage=`url(./images/dice${botNewPoints}.png)`
             winner.style.visibility="visible"
             if (userNewPoints>botNewPoints) {
                 winner.innerHTML=`Congratulation! You Win 👑🎊`
