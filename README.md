@@ -1,6 +1,6 @@
 # Dice Game 🎲
 
-[![GitHub license](https://img.shields.io/github/license/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/network)
 [![GitHub issues](https://img.shields.io/github/issues/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/issues)
