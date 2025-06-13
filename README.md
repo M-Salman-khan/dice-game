@@ -1,9 +1,9 @@
 # Dice Game 🎲
 
-[![GitHub license](https://img.shields.io/github/license/msalmankhan/dice-game)](https://github.com/msalmankhan/dice-game/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/msalmankhan/dice-game)](https://github.com/msalmankhan/dice-game/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/msalmankhan/dice-game)](https://github.com/msalmankhan/dice-game/network)
-[![GitHub issues](https://img.shields.io/github/issues/msalmankhan/dice-game)](https://github.com/msalmankhan/dice-game/issues)
+[![GitHub license](https://img.shields.io/github/license/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/network)
+[![GitHub issues](https://img.shields.io/github/issues/m-salman-khan/dice-game)](https://github.com/m-salman-khan/dice-game/issues)
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
