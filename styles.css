@@ -1,0 +1,97 @@
+ *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* background-color: cyan; */
+            background-color: black;
+            font-family: monospace;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            margin:50px auto;
+            width: 40vw;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(16, 15, 15);
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+            /* height: 100vh; */
+            /* min-width: 673px; */
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            /* width: 450px; */
+            flex-wrap: wrap;
+        }
+        button{
+            background-color: white;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-weight: 650;
+            letter-spacing: 2px;
+            margin: 23px;
+            font-family: monospace;
+            box-shadow: 0 0 10px white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(13, 4, 4, 0.804);
+            color: white;
+            transition-duration: 0.3s;
+        }
+        .bot-dice,.user-dice{
+            background-image: url(./images/dice1.png);
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .win{
+            visibility: hidden;
+            /* font-size: 60px; */
+            /* color: rgb(255, 247, 0); */
+            color: white;
+            text-align: center;
+            flex-wrap: wrap;
+            text-decoration: none;
+        }
+        h1{
+            /* font-size: 80px; */
+            margin-top: 23px;
+            text-decoration: overline;
+            color: burlywood;
+            text-align: center;
+        }
+        h2{
+            /* font-size: 50px; */
+            color:white;
+            text-align: center;
+        }
+        .you, .bot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 23px;
+            color: white;
+            /* text-decoration: overline; */
+        }
+        .para-head{
+            font-size: 28px;
+        }
+        .user-points, .bot-points{
+            margin: 23px;
+            font-size: 28px;
+        }
+        @media (max-width:770px) {
+
+            .main{
+                min-width: 330px;
+                width: 90vw;
+            }
+        }
